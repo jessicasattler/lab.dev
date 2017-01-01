@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello', function(){
-	return "hello today";
-});
+// Route::get('/form', function() {
+// 	return view('form');
+// });
+
+Route::get('/form', 'FormController@showForm');
